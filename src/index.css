@@ -1,13 +1,76 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.container {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.note-list {
+  display: grid;
+  grid-gap: 1rem;
+  /* line below allows us to set a dynamic size for each note;
+  the minimum size is 250px, and the max size is 1fr, which means
+  1 fractional unit.
+  syntax -> repeat(number of columns/rows, the column width we want); */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* minmax allows a RANGE of sizes to be set */
+}
+
+.note.new {
+  background-color: aquamarine;
+}
+
+.note textarea {
+  background-color: aquamarine;
+  border: none;
+  resize: none;
+}
+
+.note textarea:focus {
+  outline: none;
+}
+
+button.save {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+  transition: 0.05s;
+}
+
+button.save:hover {
+  cursor: pointer;
+  background-color: #f4f4f4;
+  transform: scale(1.075);
+}
+
+.note {
+  background-color: #fbf496;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.note-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
