@@ -54,7 +54,7 @@ const App = () => {
   return (
     <div className="container">
       <PageHeader />
-      <SearchBar />
+      <SearchBar handleSearch={setSearchText} />
       <NoteList
         notes={notes}
         handleAddNote={addNote}
