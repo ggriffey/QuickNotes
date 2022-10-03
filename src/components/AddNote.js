@@ -7,7 +7,9 @@ const AddNote = () => {
     setNoteText(event.target.value);
   };
 
-  const handleSaveClick = () => {};
+  const handleSaveClick = () => {
+    //this is an update
+  };
 
   return (
     <div className="note new">
