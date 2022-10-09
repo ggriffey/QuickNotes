@@ -1,4 +1,5 @@
 import React from "react";
+import { MdOutlineNightlight } from "react-icons/md";
 
 const PageHeader = ({ handleToggleMode }) => {
   return (
@@ -6,6 +7,7 @@ const PageHeader = ({ handleToggleMode }) => {
       <h1>Notes</h1>
       <button id="toggle_mode" onClick={handleToggleMode}>
         Toggle Mode
+        <MdOutlineNightlight />
       </button>
     </div>
   );
