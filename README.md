@@ -1,4 +1,4 @@
-# React Notes App 
+# QuickNotes (React notes app)
 
 LIVE DEMO: https://ggriffey.github.io/React-Notes-App
 
