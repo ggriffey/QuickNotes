@@ -70,13 +70,10 @@ const App = () => {
     const searchBar = document.querySelector(".search-bar");
     const searchBarInput = document.querySelector(".search-bar input");
 
-    console.log(
-      window.getComputedStyle(body).getPropertyValue("background-color")
-    );
     let modes;
     if (
       window.getComputedStyle(body).getPropertyValue("background-color") ===
-      "rgb(245, 245, 245)"
+      "rgb(228, 228, 228)"
     ) {
       // Dark mode
       modes = ["dark", "light"];
@@ -87,13 +84,11 @@ const App = () => {
     // update theme
     body.style.backgroundColor = `var(--${modes[0]}-bg-color)`;
     header.style.color = `var(--${modes[1]}-header-color)`;
-    button.style.backgroundColor = `var(--${modes[0]}-header-color)`;
-    button.style.color = `var(--${modes[1]}-header-color)`;
+    button.style.backgroundColor = `var(--${modes[0]}-search)`;
+    button.style.color = `var(--${modes[1]}-high-contrast)`;
     header.style.textShadow = `var(--${modes[0]}-header-color) 1px 2px 2px`;
     searchBar.style.color = `var(--${modes[1]}-bg-color)`;
     searchBar.style.backgroundColor = `var(--${modes[0]}-search)`;
-
-    // searchBarInput.style.backgroundColor = `var(--${modes[0]}-grey)`;
 
     let style = document.createElement("style");
     document.head.appendChild(style);
