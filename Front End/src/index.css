@@ -4,7 +4,7 @@
   --dark-high-contrast: #202020;
   --dark-search: #a2a2a2;
   --light-search: #f0f0f0;
-  --dark-grey: #a9a9a9;
+  --dark-grey: #bbbbbb;
   --light-grey: #f3f3f3;
   --light-bg-color: rgb(228, 228, 228);
   /* if you update this value,  ^^^
@@ -159,6 +159,7 @@ button.save:hover {
   color: var(--dark-header-color);
   text-shadow: rgb(252, 252, 252) 1px 1px 1px;
   padding: 1rem;
+  margin-top: 1rem;
   background: linear-gradient(limegreen, transparent),
     linear-gradient(90deg, skyblue, transparent),
     linear-gradient(-90deg, coral, transparent);
