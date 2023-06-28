@@ -1,5 +1,6 @@
 import React from "react";
 import { MdSearch } from "react-icons/md";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const SearchBar = ({ handleSearch }) => {
   return (
@@ -10,6 +11,8 @@ const SearchBar = ({ handleSearch }) => {
         type="text"
         placeholder="Search notes..."
       />
+      {/* <RxHamburgerMenu className="hamburger-icon" /> */}
+      {/* (onClick={handleMenuClick}) */}
     </div>
   );
 };
